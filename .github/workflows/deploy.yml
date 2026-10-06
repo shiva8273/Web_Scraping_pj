@@ -1,0 +1,84 @@
+name: Scrape and Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [Py_Web_Scraping]
+  workflow_dispatch:
+  schedule:
+    # Runs daily at 02:00 UTC
+    - cron: "0 2 * * *"
+
+# Grant the GITHUB_TOKEN the minimum permissions needed for Pages deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one deployment at a time; do not cancel in-progress runs
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  scrape-and-build:
+    name: Scrape data and build site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        run: python main.py
+
+      - name: Verify scraper output
+        run: |
+          if [ ! -f output/final_dataset.csv ]; then
+            echo "ERROR: output/final_dataset.csv was not created by main.py"
+            exit 1
+          fi
+          if [ ! -f output/summary_report.json ]; then
+            echo "ERROR: output/summary_report.json was not created by main.py"
+            exit 1
+          fi
+          echo "Scraper output verified."
+          wc -l output/final_dataset.csv
+
+      - name: Build static site
+        run: python site_builder.py
+
+      - name: Verify site/index.html exists
+        run: |
+          if [ ! -f site/index.html ]; then
+            echo "ERROR: site/index.html was not created by site_builder.py"
+            exit 1
+          fi
+          echo "site/index.html present."
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: scrape-and-build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

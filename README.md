@@ -12,6 +12,66 @@ A Python-based web scraping and data-processing pipeline that:
 
 ---
 
+## GitHub Pages Deployment
+
+The scraper runs automatically via GitHub Actions and publishes results as a static website on GitHub Pages.
+
+### What gets published
+
+| Page | Content |
+|------|---------|
+| `index.html` | Summary stats (total records, books, quotes, duplicates removed) + preview tables |
+| `books.html` | All books with title, category, price, star rating, availability; searchable + paginated |
+| `quotes.html` | All quotes with text, author (linked to author page), tags; searchable + paginated |
+| `style.css` | Shared stylesheet |
+
+The site is rebuilt from the latest scraped data on every successful workflow run. It contains no credentials or private data.
+
+### How to enable GitHub Pages
+
+1. Push this repository to GitHub (the remote branch is `Py_Web_Scraping`).
+2. Go to **Settings → Pages** in your GitHub repository.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+4. Click **Save**.
+5. Trigger the workflow: go to **Actions → Scrape and Deploy to GitHub Pages → Run workflow**, or push a commit to `Py_Web_Scraping`.
+
+### Finding the published URL
+
+After a successful deployment, the URL appears:
+- On the **Actions** run page under the `deploy` job → **Deploy to GitHub Pages** step output.
+- In **Settings → Pages** at the top of the page.
+
+The URL pattern is: `https://<your-username>.github.io/<repository-name>/`
+
+### Workflow schedule
+
+The workflow runs:
+- On every push to `Py_Web_Scraping`
+- Daily at **02:00 UTC** (keeps the data fresh without manual intervention)
+- On demand via **Actions → Run workflow**
+
+### Viewing workflow logs
+
+Go to **Actions** in your GitHub repository. Click any workflow run to see per-step logs. If the scraper fails, the `Verify scraper output` step will print a clear error message.
+
+### Credentials and secrets
+
+Both scraping targets (`books.toscrape.com` and `quotes.toscrape.com`) are public practice sites that require no authentication, API keys, or cookies. No secrets need to be configured.
+
+If you ever add a source that requires a credential, store it as a [GitHub Actions secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets) (**Settings → Secrets and variables → Actions → New repository secret**) and reference it in the workflow as `${{ secrets.YOUR_SECRET_NAME }}`. Never hard-code credentials in source files.
+
+### Running the site builder locally
+
+After running the scraper (`python main.py`), generate the site with:
+
+```bash
+python site_builder.py
+```
+
+This reads `output/final_dataset.csv` and `output/summary_report.json` and writes `site/`. Open `site/index.html` in a browser to preview. All links are relative, so the site works both locally and at the GitHub Pages URL.
+
+---
+
 ## Python Version
 
 Developed and tested with **Python 3.13.2**.  
