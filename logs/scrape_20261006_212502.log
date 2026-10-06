@@ -1,0 +1,306 @@
+2026-10-07 02:55:02,875 [INFO    ] main – ============================================================
+2026-10-07 02:55:02,882 [INFO    ] main – Pipeline started at 2026-10-06T21:25:02.882701+00:00
+2026-10-07 02:55:02,883 [INFO    ] main – ============================================================
+2026-10-07 02:55:02,883 [INFO    ] main – STEP 1 – Scraping …
+2026-10-07 02:55:02,883 [INFO    ] scrapers.books_scraper – [Books] Starting scrape …
+2026-10-07 02:55:02,889 [DEBUG   ] urllib3.connectionpool – Starting new HTTPS connection (1): books.toscrape.com:443
+2026-10-07 02:55:03,921 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET / HTTP/1.1" 200 51294
+2026-10-07 02:55:04,510 [INFO    ] scrapers.books_scraper – [Books] Found 50 categories.
+2026-10-07 02:55:04,511 [INFO    ] scrapers.books_scraper – [Books] Category 'Travel' – page 1: https://books.toscrape.com/catalogue/category/books/travel_2/index.html
+2026-10-07 02:55:04,822 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/travel_2/index.html HTTP/1.1" 200 37009
+2026-10-07 02:55:04,882 [DEBUG   ] scrapers.books_scraper – [Books] 11 records so far in 'Travel'
+2026-10-07 02:55:05,886 [INFO    ] scrapers.books_scraper – [Books] Category 'Mystery' – page 1: https://books.toscrape.com/catalogue/category/books/mystery_3/index.html
+2026-10-07 02:55:06,256 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/mystery_3/index.html HTTP/1.1" 200 50388
+2026-10-07 02:55:06,546 [DEBUG   ] scrapers.books_scraper – [Books] 20 records so far in 'Mystery'
+2026-10-07 02:55:07,547 [INFO    ] scrapers.books_scraper – [Books] Category 'Mystery' – page 2: https://books.toscrape.com/catalogue/category/books/mystery_3/page-2.html
+2026-10-07 02:55:07,894 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/mystery_3/page-2.html HTTP/1.1" 200 38533
+2026-10-07 02:55:08,223 [DEBUG   ] scrapers.books_scraper – [Books] 32 records so far in 'Mystery'
+2026-10-07 02:55:09,224 [INFO    ] scrapers.books_scraper – [Books] Category 'Historical Fiction' – page 1: https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html
+2026-10-07 02:55:09,556 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/historical-fiction_4/index.html HTTP/1.1" 200 50109
+2026-10-07 02:55:10,175 [DEBUG   ] scrapers.books_scraper – [Books] 20 records so far in 'Historical Fiction'
+2026-10-07 02:55:11,176 [INFO    ] scrapers.books_scraper – [Books] Category 'Historical Fiction' – page 2: https://books.toscrape.com/catalogue/category/books/historical-fiction_4/page-2.html
+2026-10-07 02:55:11,478 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/historical-fiction_4/page-2.html HTTP/1.1" 200 29015
+2026-10-07 02:55:11,795 [DEBUG   ] scrapers.books_scraper – [Books] 26 records so far in 'Historical Fiction'
+2026-10-07 02:55:12,796 [INFO    ] scrapers.books_scraper – [Books] Category 'Sequential Art' – page 1: https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html
+2026-10-07 02:55:13,124 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/sequential-art_5/index.html HTTP/1.1" 200 51455
+2026-10-07 02:55:13,774 [DEBUG   ] scrapers.books_scraper – [Books] 20 records so far in 'Sequential Art'
+2026-10-07 02:55:14,777 [INFO    ] scrapers.books_scraper – [Books] Category 'Sequential Art' – page 2: https://books.toscrape.com/catalogue/category/books/sequential-art_5/page-2.html
+2026-10-07 02:55:15,062 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/sequential-art_5/page-2.html HTTP/1.1" 200 51165
+2026-10-07 02:55:15,721 [DEBUG   ] scrapers.books_scraper – [Books] 40 records so far in 'Sequential Art'
+2026-10-07 02:55:16,723 [INFO    ] scrapers.books_scraper – [Books] Category 'Sequential Art' – page 3: https://books.toscrape.com/catalogue/category/books/sequential-art_5/page-3.html
+2026-10-07 02:55:17,111 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/sequential-art_5/page-3.html HTTP/1.1" 200 51392
+2026-10-07 02:55:17,728 [DEBUG   ] scrapers.books_scraper – [Books] 60 records so far in 'Sequential Art'
+2026-10-07 02:55:18,729 [INFO    ] scrapers.books_scraper – [Books] Category 'Sequential Art' – page 4: https://books.toscrape.com/catalogue/category/books/sequential-art_5/page-4.html
+2026-10-07 02:55:19,056 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/sequential-art_5/page-4.html HTTP/1.1" 200 43840
+2026-10-07 02:55:19,392 [DEBUG   ] scrapers.books_scraper – [Books] 75 records so far in 'Sequential Art'
+2026-10-07 02:55:20,393 [INFO    ] scrapers.books_scraper – [Books] Category 'Classics' – page 1: https://books.toscrape.com/catalogue/category/books/classics_6/index.html
+2026-10-07 02:55:20,695 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/classics_6/index.html HTTP/1.1" 200 47874
+2026-10-07 02:55:21,354 [DEBUG   ] scrapers.books_scraper – [Books] 19 records so far in 'Classics'
+2026-10-07 02:55:22,357 [INFO    ] scrapers.books_scraper – [Books] Category 'Philosophy' – page 1: https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html
+2026-10-07 02:55:22,641 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/philosophy_7/index.html HTTP/1.1" 200 37032
+2026-10-07 02:55:22,960 [DEBUG   ] scrapers.books_scraper – [Books] 11 records so far in 'Philosophy'
+2026-10-07 02:55:23,961 [INFO    ] scrapers.books_scraper – [Books] Category 'Romance' – page 1: https://books.toscrape.com/catalogue/category/books/romance_8/index.html
+2026-10-07 02:55:24,288 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/romance_8/index.html HTTP/1.1" 200 50397
+2026-10-07 02:55:24,914 [DEBUG   ] scrapers.books_scraper – [Books] 20 records so far in 'Romance'
+2026-10-07 02:55:25,914 [INFO    ] scrapers.books_scraper – [Books] Category 'Romance' – page 2: https://books.toscrape.com/catalogue/category/books/romance_8/page-2.html
+2026-10-07 02:55:26,328 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/romance_8/page-2.html HTTP/1.1" 200 42636
+2026-10-07 02:55:26,657 [DEBUG   ] scrapers.books_scraper – [Books] 35 records so far in 'Romance'
+2026-10-07 02:55:27,657 [INFO    ] scrapers.books_scraper – [Books] Category 'Womens Fiction' – page 1: https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html
+2026-10-07 02:55:27,965 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/womens-fiction_9/index.html HTTP/1.1" 200 45308
+2026-10-07 02:55:28,531 [DEBUG   ] scrapers.books_scraper – [Books] 17 records so far in 'Womens Fiction'
+2026-10-07 02:55:29,533 [INFO    ] scrapers.books_scraper – [Books] Category 'Fiction' – page 1: https://books.toscrape.com/catalogue/category/books/fiction_10/index.html
+2026-10-07 02:55:29,910 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/fiction_10/index.html HTTP/1.1" 200 49677
+2026-10-07 02:55:30,558 [DEBUG   ] scrapers.books_scraper – [Books] 20 records so far in 'Fiction'
+2026-10-07 02:55:31,559 [INFO    ] scrapers.books_scraper – [Books] Category 'Fiction' – page 2: https://books.toscrape.com/catalogue/category/books/fiction_10/page-2.html
+2026-10-07 02:55:31,825 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/fiction_10/page-2.html HTTP/1.1" 200 49510
+2026-10-07 02:55:32,514 [DEBUG   ] scrapers.books_scraper – [Books] 40 records so far in 'Fiction'
+2026-10-07 02:55:33,514 [INFO    ] scrapers.books_scraper – [Books] Category 'Fiction' – page 3: https://books.toscrape.com/catalogue/category/books/fiction_10/page-3.html
+2026-10-07 02:55:33,804 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/fiction_10/page-3.html HTTP/1.1" 200 49453
+2026-10-07 02:55:34,446 [DEBUG   ] scrapers.books_scraper – [Books] 60 records so far in 'Fiction'
+2026-10-07 02:55:35,446 [INFO    ] scrapers.books_scraper – [Books] Category 'Fiction' – page 4: https://books.toscrape.com/catalogue/category/books/fiction_10/page-4.html
+2026-10-07 02:55:35,749 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/fiction_10/page-4.html HTTP/1.1" 200 27424
+2026-10-07 02:55:36,067 [DEBUG   ] scrapers.books_scraper – [Books] 65 records so far in 'Fiction'
+2026-10-07 02:55:37,069 [INFO    ] scrapers.books_scraper – [Books] Category 'Childrens' – page 1: https://books.toscrape.com/catalogue/category/books/childrens_11/index.html
+2026-10-07 02:55:37,399 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/childrens_11/index.html HTTP/1.1" 200 49864
+2026-10-07 02:55:37,992 [DEBUG   ] scrapers.books_scraper – [Books] 20 records so far in 'Childrens'
+2026-10-07 02:55:38,993 [INFO    ] scrapers.books_scraper – [Books] Category 'Childrens' – page 2: https://books.toscrape.com/catalogue/category/books/childrens_11/page-2.html
+2026-10-07 02:55:39,332 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/childrens_11/page-2.html HTTP/1.1" 200 33788
+2026-10-07 02:55:39,659 [DEBUG   ] scrapers.books_scraper – [Books] 29 records so far in 'Childrens'
+2026-10-07 02:55:40,660 [INFO    ] scrapers.books_scraper – [Books] Category 'Religion' – page 1: https://books.toscrape.com/catalogue/category/books/religion_12/index.html
+2026-10-07 02:55:40,982 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/religion_12/index.html HTTP/1.1" 200 30933
+2026-10-07 02:55:41,302 [DEBUG   ] scrapers.books_scraper – [Books] 7 records so far in 'Religion'
+2026-10-07 02:55:42,307 [INFO    ] scrapers.books_scraper – [Books] Category 'Nonfiction' – page 1: https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html
+2026-10-07 02:55:42,587 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/nonfiction_13/index.html HTTP/1.1" 200 52725
+2026-10-07 02:55:43,241 [DEBUG   ] scrapers.books_scraper – [Books] 20 records so far in 'Nonfiction'
+2026-10-07 02:55:44,242 [INFO    ] scrapers.books_scraper – [Books] Category 'Nonfiction' – page 2: https://books.toscrape.com/catalogue/category/books/nonfiction_13/page-2.html
+2026-10-07 02:55:44,508 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/nonfiction_13/page-2.html HTTP/1.1" 200 52464
+2026-10-07 02:55:45,109 [DEBUG   ] scrapers.books_scraper – [Books] 40 records so far in 'Nonfiction'
+2026-10-07 02:55:46,110 [INFO    ] scrapers.books_scraper – [Books] Category 'Nonfiction' – page 3: https://books.toscrape.com/catalogue/category/books/nonfiction_13/page-3.html
+2026-10-07 02:55:46,416 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/nonfiction_13/page-3.html HTTP/1.1" 200 52401
+2026-10-07 02:55:47,040 [DEBUG   ] scrapers.books_scraper – [Books] 60 records so far in 'Nonfiction'
+2026-10-07 02:55:48,042 [INFO    ] scrapers.books_scraper – [Books] Category 'Nonfiction' – page 4: https://books.toscrape.com/catalogue/category/books/nonfiction_13/page-4.html
+2026-10-07 02:55:48,343 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/nonfiction_13/page-4.html HTTP/1.1" 200 52538
+2026-10-07 02:55:48,998 [DEBUG   ] scrapers.books_scraper – [Books] 80 records so far in 'Nonfiction'
+2026-10-07 02:55:49,999 [INFO    ] scrapers.books_scraper – [Books] Category 'Nonfiction' – page 5: https://books.toscrape.com/catalogue/category/books/nonfiction_13/page-5.html
+2026-10-07 02:55:50,289 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/nonfiction_13/page-5.html HTTP/1.1" 200 52115
+2026-10-07 02:55:50,624 [DEBUG   ] scrapers.books_scraper – [Books] 100 records so far in 'Nonfiction'
+2026-10-07 02:55:51,625 [INFO    ] scrapers.books_scraper – [Books] Category 'Nonfiction' – page 6: https://books.toscrape.com/catalogue/category/books/nonfiction_13/page-6.html
+2026-10-07 02:55:51,931 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/nonfiction_13/page-6.html HTTP/1.1" 200 35365
+2026-10-07 02:55:52,257 [DEBUG   ] scrapers.books_scraper – [Books] 110 records so far in 'Nonfiction'
+2026-10-07 02:55:53,258 [INFO    ] scrapers.books_scraper – [Books] Category 'Music' – page 1: https://books.toscrape.com/catalogue/category/books/music_14/index.html
+2026-10-07 02:55:53,565 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/music_14/index.html HTTP/1.1" 200 40193
+2026-10-07 02:55:53,903 [DEBUG   ] scrapers.books_scraper – [Books] 13 records so far in 'Music'
+2026-10-07 02:55:54,905 [INFO    ] scrapers.books_scraper – [Books] Category 'Default' – page 1: https://books.toscrape.com/catalogue/category/books/default_15/index.html
+2026-10-07 02:55:55,203 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/default_15/index.html HTTP/1.1" 200 51474
+2026-10-07 02:55:55,772 [DEBUG   ] scrapers.books_scraper – [Books] 20 records so far in 'Default'
+2026-10-07 02:55:56,774 [INFO    ] scrapers.books_scraper – [Books] Category 'Default' – page 2: https://books.toscrape.com/catalogue/category/books/default_15/page-2.html
+2026-10-07 02:55:57,149 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/default_15/page-2.html HTTP/1.1" 200 50858
+2026-10-07 02:55:57,805 [DEBUG   ] scrapers.books_scraper – [Books] 40 records so far in 'Default'
+2026-10-07 02:55:58,807 [INFO    ] scrapers.books_scraper – [Books] Category 'Default' – page 3: https://books.toscrape.com/catalogue/category/books/default_15/page-3.html
+2026-10-07 02:55:59,102 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/default_15/page-3.html HTTP/1.1" 200 50824
+2026-10-07 02:55:59,743 [DEBUG   ] scrapers.books_scraper – [Books] 60 records so far in 'Default'
+2026-10-07 02:56:00,744 [INFO    ] scrapers.books_scraper – [Books] Category 'Default' – page 4: https://books.toscrape.com/catalogue/category/books/default_15/page-4.html
+2026-10-07 02:56:01,040 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/default_15/page-4.html HTTP/1.1" 200 51222
+2026-10-07 02:56:01,692 [DEBUG   ] scrapers.books_scraper – [Books] 80 records so far in 'Default'
+2026-10-07 02:56:02,692 [INFO    ] scrapers.books_scraper – [Books] Category 'Default' – page 5: https://books.toscrape.com/catalogue/category/books/default_15/page-5.html
+2026-10-07 02:56:02,987 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/default_15/page-5.html HTTP/1.1" 200 51027
+2026-10-07 02:56:03,633 [DEBUG   ] scrapers.books_scraper – [Books] 100 records so far in 'Default'
+2026-10-07 02:56:04,634 [INFO    ] scrapers.books_scraper – [Books] Category 'Default' – page 6: https://books.toscrape.com/catalogue/category/books/default_15/page-6.html
+2026-10-07 02:56:04,933 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/default_15/page-6.html HTTP/1.1" 200 50328
+2026-10-07 02:56:05,599 [DEBUG   ] scrapers.books_scraper – [Books] 120 records so far in 'Default'
+2026-10-07 02:56:06,600 [INFO    ] scrapers.books_scraper – [Books] Category 'Default' – page 7: https://books.toscrape.com/catalogue/category/books/default_15/page-7.html
+2026-10-07 02:56:06,979 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/default_15/page-7.html HTTP/1.1" 200 50668
+2026-10-07 02:56:07,649 [DEBUG   ] scrapers.books_scraper – [Books] 140 records so far in 'Default'
+2026-10-07 02:56:08,652 [INFO    ] scrapers.books_scraper – [Books] Category 'Default' – page 8: https://books.toscrape.com/catalogue/category/books/default_15/page-8.html
+2026-10-07 02:56:08,926 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/default_15/page-8.html HTTP/1.1" 200 37911
+2026-10-07 02:56:09,259 [DEBUG   ] scrapers.books_scraper – [Books] 152 records so far in 'Default'
+2026-10-07 02:56:10,260 [INFO    ] scrapers.books_scraper – [Books] Category 'Science Fiction' – page 1: https://books.toscrape.com/catalogue/category/books/science-fiction_16/index.html
+2026-10-07 02:56:10,563 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/science-fiction_16/index.html HTTP/1.1" 200 44447
+2026-10-07 02:56:11,210 [DEBUG   ] scrapers.books_scraper – [Books] 16 records so far in 'Science Fiction'
+2026-10-07 02:56:12,213 [INFO    ] scrapers.books_scraper – [Books] Category 'Sports and Games' – page 1: https://books.toscrape.com/catalogue/category/books/sports-and-games_17/index.html
+2026-10-07 02:56:12,502 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/sports-and-games_17/index.html HTTP/1.1" 200 27558
+2026-10-07 02:56:12,801 [DEBUG   ] scrapers.books_scraper – [Books] 5 records so far in 'Sports and Games'
+2026-10-07 02:56:13,802 [INFO    ] scrapers.books_scraper – [Books] Category 'Add a comment' – page 1: https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html
+2026-10-07 02:56:14,156 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/add-a-comment_18/index.html HTTP/1.1" 200 50931
+2026-10-07 02:56:14,801 [DEBUG   ] scrapers.books_scraper – [Books] 20 records so far in 'Add a comment'
+2026-10-07 02:56:15,806 [INFO    ] scrapers.books_scraper – [Books] Category 'Add a comment' – page 2: https://books.toscrape.com/catalogue/category/books/add-a-comment_18/page-2.html
+2026-10-07 02:56:16,195 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/add-a-comment_18/page-2.html HTTP/1.1" 200 50119
+2026-10-07 02:56:16,749 [DEBUG   ] scrapers.books_scraper – [Books] 40 records so far in 'Add a comment'
+2026-10-07 02:56:17,750 [INFO    ] scrapers.books_scraper – [Books] Category 'Add a comment' – page 3: https://books.toscrape.com/catalogue/category/books/add-a-comment_18/page-3.html
+2026-10-07 02:56:18,041 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/add-a-comment_18/page-3.html HTTP/1.1" 200 50992
+2026-10-07 02:56:18,689 [DEBUG   ] scrapers.books_scraper – [Books] 60 records so far in 'Add a comment'
+2026-10-07 02:56:19,689 [INFO    ] scrapers.books_scraper – [Books] Category 'Add a comment' – page 4: https://books.toscrape.com/catalogue/category/books/add-a-comment_18/page-4.html
+2026-10-07 02:56:19,986 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/add-a-comment_18/page-4.html HTTP/1.1" 200 30297
+2026-10-07 02:56:20,315 [DEBUG   ] scrapers.books_scraper – [Books] 67 records so far in 'Add a comment'
+2026-10-07 02:56:21,316 [INFO    ] scrapers.books_scraper – [Books] Category 'Fantasy' – page 1: https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html
+2026-10-07 02:56:21,623 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/fantasy_19/index.html HTTP/1.1" 200 51248
+2026-10-07 02:56:22,265 [DEBUG   ] scrapers.books_scraper – [Books] 20 records so far in 'Fantasy'
+2026-10-07 02:56:23,266 [INFO    ] scrapers.books_scraper – [Books] Category 'Fantasy' – page 2: https://books.toscrape.com/catalogue/category/books/fantasy_19/page-2.html
+2026-10-07 02:56:23,582 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/fantasy_19/page-2.html HTTP/1.1" 200 50831
+2026-10-07 02:56:24,208 [DEBUG   ] scrapers.books_scraper – [Books] 40 records so far in 'Fantasy'
+2026-10-07 02:56:25,209 [INFO    ] scrapers.books_scraper – [Books] Category 'Fantasy' – page 3: https://books.toscrape.com/catalogue/category/books/fantasy_19/page-3.html
+2026-10-07 02:56:25,516 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/fantasy_19/page-3.html HTTP/1.1" 200 32210
+2026-10-07 02:56:25,837 [DEBUG   ] scrapers.books_scraper – [Books] 48 records so far in 'Fantasy'
+2026-10-07 02:56:26,838 [INFO    ] scrapers.books_scraper – [Books] Category 'New Adult' – page 1: https://books.toscrape.com/catalogue/category/books/new-adult_20/index.html
+2026-10-07 02:56:27,152 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/new-adult_20/index.html HTTP/1.1" 200 28732
+2026-10-07 02:56:27,478 [DEBUG   ] scrapers.books_scraper – [Books] 6 records so far in 'New Adult'
+2026-10-07 02:56:28,479 [INFO    ] scrapers.books_scraper – [Books] Category 'Young Adult' – page 1: https://books.toscrape.com/catalogue/category/books/young-adult_21/index.html
+2026-10-07 02:56:28,792 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/young-adult_21/index.html HTTP/1.1" 200 50167
+2026-10-07 02:56:29,446 [DEBUG   ] scrapers.books_scraper – [Books] 20 records so far in 'Young Adult'
+2026-10-07 02:56:30,458 [INFO    ] scrapers.books_scraper – [Books] Category 'Young Adult' – page 2: https://books.toscrape.com/catalogue/category/books/young-adult_21/page-2.html
+2026-10-07 02:56:30,735 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/young-adult_21/page-2.html HTTP/1.1" 200 50268
+2026-10-07 02:56:31,385 [DEBUG   ] scrapers.books_scraper – [Books] 40 records so far in 'Young Adult'
+2026-10-07 02:56:32,386 [INFO    ] scrapers.books_scraper – [Books] Category 'Young Adult' – page 3: https://books.toscrape.com/catalogue/category/books/young-adult_21/page-3.html
+2026-10-07 02:56:32,684 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/young-adult_21/page-3.html HTTP/1.1" 200 40893
+2026-10-07 02:56:33,013 [DEBUG   ] scrapers.books_scraper – [Books] 54 records so far in 'Young Adult'
+2026-10-07 02:56:34,016 [INFO    ] scrapers.books_scraper – [Books] Category 'Science' – page 1: https://books.toscrape.com/catalogue/category/books/science_22/index.html
+2026-10-07 02:56:34,325 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/science_22/index.html HTTP/1.1" 200 42547
+2026-10-07 02:56:34,967 [DEBUG   ] scrapers.books_scraper – [Books] 14 records so far in 'Science'
+2026-10-07 02:56:35,968 [INFO    ] scrapers.books_scraper – [Books] Category 'Poetry' – page 1: https://books.toscrape.com/catalogue/category/books/poetry_23/index.html
+2026-10-07 02:56:36,269 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/poetry_23/index.html HTTP/1.1" 200 48207
+2026-10-07 02:56:36,871 [DEBUG   ] scrapers.books_scraper – [Books] 19 records so far in 'Poetry'
+2026-10-07 02:56:37,872 [INFO    ] scrapers.books_scraper – [Books] Category 'Paranormal' – page 1: https://books.toscrape.com/catalogue/category/books/paranormal_24/index.html
+2026-10-07 02:56:38,211 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/paranormal_24/index.html HTTP/1.1" 200 21385
+2026-10-07 02:56:38,538 [DEBUG   ] scrapers.books_scraper – [Books] 1 records so far in 'Paranormal'
+2026-10-07 02:56:39,539 [INFO    ] scrapers.books_scraper – [Books] Category 'Art' – page 1: https://books.toscrape.com/catalogue/category/books/art_25/index.html
+2026-10-07 02:56:39,854 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/art_25/index.html HTTP/1.1" 200 31769
+2026-10-07 02:56:40,186 [DEBUG   ] scrapers.books_scraper – [Books] 8 records so far in 'Art'
+2026-10-07 02:56:41,187 [INFO    ] scrapers.books_scraper – [Books] Category 'Psychology' – page 1: https://books.toscrape.com/catalogue/category/books/psychology_26/index.html
+2026-10-07 02:56:41,493 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/psychology_26/index.html HTTP/1.1" 200 30968
+2026-10-07 02:56:41,817 [DEBUG   ] scrapers.books_scraper – [Books] 7 records so far in 'Psychology'
+2026-10-07 02:56:42,818 [INFO    ] scrapers.books_scraper – [Books] Category 'Autobiography' – page 1: https://books.toscrape.com/catalogue/category/books/autobiography_27/index.html
+2026-10-07 02:56:43,130 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/autobiography_27/index.html HTTP/1.1" 200 33034
+2026-10-07 02:56:43,455 [DEBUG   ] scrapers.books_scraper – [Books] 9 records so far in 'Autobiography'
+2026-10-07 02:56:44,457 [INFO    ] scrapers.books_scraper – [Books] Category 'Parenting' – page 1: https://books.toscrape.com/catalogue/category/books/parenting_28/index.html
+2026-10-07 02:56:44,734 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/parenting_28/index.html HTTP/1.1" 200 21492
+2026-10-07 02:56:45,084 [DEBUG   ] scrapers.books_scraper – [Books] 1 records so far in 'Parenting'
+2026-10-07 02:56:46,085 [INFO    ] scrapers.books_scraper – [Books] Category 'Adult Fiction' – page 1: https://books.toscrape.com/catalogue/category/books/adult-fiction_29/index.html
+2026-10-07 02:56:46,357 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/adult-fiction_29/index.html HTTP/1.1" 200 21377
+2026-10-07 02:56:46,720 [DEBUG   ] scrapers.books_scraper – [Books] 1 records so far in 'Adult Fiction'
+2026-10-07 02:56:47,721 [INFO    ] scrapers.books_scraper – [Books] Category 'Humor' – page 1: https://books.toscrape.com/catalogue/category/books/humor_30/index.html
+2026-10-07 02:56:48,043 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/humor_30/index.html HTTP/1.1" 200 35542
+2026-10-07 02:56:48,367 [DEBUG   ] scrapers.books_scraper – [Books] 10 records so far in 'Humor'
+2026-10-07 02:56:49,372 [INFO    ] scrapers.books_scraper – [Books] Category 'Horror' – page 1: https://books.toscrape.com/catalogue/category/books/horror_31/index.html
+2026-10-07 02:56:49,680 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/horror_31/index.html HTTP/1.1" 200 44510
+2026-10-07 02:56:50,336 [DEBUG   ] scrapers.books_scraper – [Books] 17 records so far in 'Horror'
+2026-10-07 02:56:51,337 [INFO    ] scrapers.books_scraper – [Books] Category 'History' – page 1: https://books.toscrape.com/catalogue/category/books/history_32/index.html
+2026-10-07 02:56:51,628 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/history_32/index.html HTTP/1.1" 200 49302
+2026-10-07 02:56:52,298 [DEBUG   ] scrapers.books_scraper – [Books] 18 records so far in 'History'
+2026-10-07 02:56:53,298 [INFO    ] scrapers.books_scraper – [Books] Category 'Food and Drink' – page 1: https://books.toscrape.com/catalogue/category/books/food-and-drink_33/index.html
+2026-10-07 02:56:53,587 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/food-and-drink_33/index.html HTTP/1.1" 200 54124
+2026-10-07 02:56:54,218 [DEBUG   ] scrapers.books_scraper – [Books] 20 records so far in 'Food and Drink'
+2026-10-07 02:56:55,220 [INFO    ] scrapers.books_scraper – [Books] Category 'Food and Drink' – page 2: https://books.toscrape.com/catalogue/category/books/food-and-drink_33/page-2.html
+2026-10-07 02:56:55,519 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/food-and-drink_33/page-2.html HTTP/1.1" 200 36510
+2026-10-07 02:56:55,856 [DEBUG   ] scrapers.books_scraper – [Books] 30 records so far in 'Food and Drink'
+2026-10-07 02:56:56,858 [INFO    ] scrapers.books_scraper – [Books] Category 'Christian Fiction' – page 1: https://books.toscrape.com/catalogue/category/books/christian-fiction_34/index.html
+2026-10-07 02:56:57,160 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/christian-fiction_34/index.html HTTP/1.1" 200 28767
+2026-10-07 02:56:57,499 [DEBUG   ] scrapers.books_scraper – [Books] 6 records so far in 'Christian Fiction'
+2026-10-07 02:56:58,500 [INFO    ] scrapers.books_scraper – [Books] Category 'Business' – page 1: https://books.toscrape.com/catalogue/category/books/business_35/index.html
+2026-10-07 02:56:58,794 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/business_35/index.html HTTP/1.1" 200 39006
+2026-10-07 02:56:59,144 [DEBUG   ] scrapers.books_scraper – [Books] 12 records so far in 'Business'
+2026-10-07 02:57:00,145 [INFO    ] scrapers.books_scraper – [Books] Category 'Biography' – page 1: https://books.toscrape.com/catalogue/category/books/biography_36/index.html
+2026-10-07 02:57:00,433 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/biography_36/index.html HTTP/1.1" 200 27988
+2026-10-07 02:57:00,736 [DEBUG   ] scrapers.books_scraper – [Books] 5 records so far in 'Biography'
+2026-10-07 02:57:01,740 [INFO    ] scrapers.books_scraper – [Books] Category 'Thriller' – page 1: https://books.toscrape.com/catalogue/category/books/thriller_37/index.html
+2026-10-07 02:57:02,074 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/thriller_37/index.html HTTP/1.1" 200 36067
+2026-10-07 02:57:02,420 [DEBUG   ] scrapers.books_scraper – [Books] 11 records so far in 'Thriller'
+2026-10-07 02:57:03,423 [INFO    ] scrapers.books_scraper – [Books] Category 'Contemporary' – page 1: https://books.toscrape.com/catalogue/category/books/contemporary_38/index.html
+2026-10-07 02:57:03,722 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/contemporary_38/index.html HTTP/1.1" 200 24345
+2026-10-07 02:57:04,035 [DEBUG   ] scrapers.books_scraper – [Books] 3 records so far in 'Contemporary'
+2026-10-07 02:57:05,043 [INFO    ] scrapers.books_scraper – [Books] Category 'Spirituality' – page 1: https://books.toscrape.com/catalogue/category/books/spirituality_39/index.html
+2026-10-07 02:57:05,348 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/spirituality_39/index.html HTTP/1.1" 200 29649
+2026-10-07 02:57:05,678 [DEBUG   ] scrapers.books_scraper – [Books] 6 records so far in 'Spirituality'
+2026-10-07 02:57:06,679 [INFO    ] scrapers.books_scraper – [Books] Category 'Academic' – page 1: https://books.toscrape.com/catalogue/category/books/academic_40/index.html
+2026-10-07 02:57:06,969 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/academic_40/index.html HTTP/1.1" 200 21359
+2026-10-07 02:57:07,312 [DEBUG   ] scrapers.books_scraper – [Books] 1 records so far in 'Academic'
+2026-10-07 02:57:08,314 [INFO    ] scrapers.books_scraper – [Books] Category 'Self Help' – page 1: https://books.toscrape.com/catalogue/category/books/self-help_41/index.html
+2026-10-07 02:57:08,626 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/self-help_41/index.html HTTP/1.1" 200 27997
+2026-10-07 02:57:08,955 [DEBUG   ] scrapers.books_scraper – [Books] 5 records so far in 'Self Help'
+2026-10-07 02:57:09,956 [INFO    ] scrapers.books_scraper – [Books] Category 'Historical' – page 1: https://books.toscrape.com/catalogue/category/books/historical_42/index.html
+2026-10-07 02:57:10,267 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/historical_42/index.html HTTP/1.1" 200 22924
+2026-10-07 02:57:10,550 [DEBUG   ] scrapers.books_scraper – [Books] 2 records so far in 'Historical'
+2026-10-07 02:57:11,551 [INFO    ] scrapers.books_scraper – [Books] Category 'Christian' – page 1: https://books.toscrape.com/catalogue/category/books/christian_43/index.html
+2026-10-07 02:57:11,915 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/christian_43/index.html HTTP/1.1" 200 24662
+2026-10-07 02:57:12,243 [DEBUG   ] scrapers.books_scraper – [Books] 3 records so far in 'Christian'
+2026-10-07 02:57:13,244 [INFO    ] scrapers.books_scraper – [Books] Category 'Suspense' – page 1: https://books.toscrape.com/catalogue/category/books/suspense_44/index.html
+2026-10-07 02:57:13,542 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/suspense_44/index.html HTTP/1.1" 200 21362
+2026-10-07 02:57:13,890 [DEBUG   ] scrapers.books_scraper – [Books] 1 records so far in 'Suspense'
+2026-10-07 02:57:14,892 [INFO    ] scrapers.books_scraper – [Books] Category 'Short Stories' – page 1: https://books.toscrape.com/catalogue/category/books/short-stories_45/index.html
+2026-10-07 02:57:15,178 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/short-stories_45/index.html HTTP/1.1" 200 21264
+2026-10-07 02:57:15,509 [DEBUG   ] scrapers.books_scraper – [Books] 1 records so far in 'Short Stories'
+2026-10-07 02:57:16,510 [INFO    ] scrapers.books_scraper – [Books] Category 'Novels' – page 1: https://books.toscrape.com/catalogue/category/books/novels_46/index.html
+2026-10-07 02:57:16,819 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/novels_46/index.html HTTP/1.1" 200 21456
+2026-10-07 02:57:17,133 [DEBUG   ] scrapers.books_scraper – [Books] 1 records so far in 'Novels'
+2026-10-07 02:57:18,136 [INFO    ] scrapers.books_scraper – [Books] Category 'Health' – page 1: https://books.toscrape.com/catalogue/category/books/health_47/index.html
+2026-10-07 02:57:18,470 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/health_47/index.html HTTP/1.1" 200 26240
+2026-10-07 02:57:18,783 [DEBUG   ] scrapers.books_scraper – [Books] 4 records so far in 'Health'
+2026-10-07 02:57:19,784 [INFO    ] scrapers.books_scraper – [Books] Category 'Politics' – page 1: https://books.toscrape.com/catalogue/category/books/politics_48/index.html
+2026-10-07 02:57:20,094 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/politics_48/index.html HTTP/1.1" 200 24717
+2026-10-07 02:57:20,434 [DEBUG   ] scrapers.books_scraper – [Books] 3 records so far in 'Politics'
+2026-10-07 02:57:21,435 [INFO    ] scrapers.books_scraper – [Books] Category 'Cultural' – page 1: https://books.toscrape.com/catalogue/category/books/cultural_49/index.html
+2026-10-07 02:57:21,736 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/cultural_49/index.html HTTP/1.1" 200 21269
+2026-10-07 02:57:22,060 [DEBUG   ] scrapers.books_scraper – [Books] 1 records so far in 'Cultural'
+2026-10-07 02:57:23,062 [INFO    ] scrapers.books_scraper – [Books] Category 'Erotica' – page 1: https://books.toscrape.com/catalogue/category/books/erotica_50/index.html
+2026-10-07 02:57:23,370 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/erotica_50/index.html HTTP/1.1" 200 21248
+2026-10-07 02:57:23,689 [DEBUG   ] scrapers.books_scraper – [Books] 1 records so far in 'Erotica'
+2026-10-07 02:57:24,690 [INFO    ] scrapers.books_scraper – [Books] Category 'Crime' – page 1: https://books.toscrape.com/catalogue/category/books/crime_51/index.html
+2026-10-07 02:57:25,009 [DEBUG   ] urllib3.connectionpool – https://books.toscrape.com:443 "GET /catalogue/category/books/crime_51/index.html HTTP/1.1" 200 21493
+2026-10-07 02:57:25,330 [DEBUG   ] scrapers.books_scraper – [Books] 1 records so far in 'Crime'
+2026-10-07 02:57:26,331 [INFO    ] scrapers.books_scraper – [Books] Finished. 1000 raw records collected.
+2026-10-07 02:57:26,334 [INFO    ] main – Books raw records: 1000
+2026-10-07 02:57:26,336 [INFO    ] scrapers.quotes_scraper – [Quotes] Starting scrape …
+2026-10-07 02:57:26,336 [INFO    ] scrapers.quotes_scraper – [Quotes] Page 1: https://quotes.toscrape.com/
+2026-10-07 02:57:26,338 [DEBUG   ] urllib3.connectionpool – Starting new HTTPS connection (1): quotes.toscrape.com:443
+2026-10-07 02:57:27,367 [DEBUG   ] urllib3.connectionpool – https://quotes.toscrape.com:443 "GET / HTTP/1.1" 200 11064
+2026-10-07 02:57:27,646 [DEBUG   ] scrapers.quotes_scraper – [Quotes] 10 records so far.
+2026-10-07 02:57:28,648 [INFO    ] scrapers.quotes_scraper – [Quotes] Page 2: https://quotes.toscrape.com/page/2/
+2026-10-07 02:57:29,004 [DEBUG   ] urllib3.connectionpool – https://quotes.toscrape.com:443 "GET /page/2/ HTTP/1.1" 200 13745
+2026-10-07 02:57:29,324 [DEBUG   ] scrapers.quotes_scraper – [Quotes] 20 records so far.
+2026-10-07 02:57:30,325 [INFO    ] scrapers.quotes_scraper – [Quotes] Page 3: https://quotes.toscrape.com/page/3/
+2026-10-07 02:57:30,642 [DEBUG   ] urllib3.connectionpool – https://quotes.toscrape.com:443 "GET /page/3/ HTTP/1.1" 200 10029
+2026-10-07 02:57:30,658 [DEBUG   ] scrapers.quotes_scraper – [Quotes] 30 records so far.
+2026-10-07 02:57:31,660 [INFO    ] scrapers.quotes_scraper – [Quotes] Page 4: https://quotes.toscrape.com/page/4/
+2026-10-07 02:57:31,971 [DEBUG   ] urllib3.connectionpool – https://quotes.toscrape.com:443 "GET /page/4/ HTTP/1.1" 200 10325
+2026-10-07 02:57:31,984 [DEBUG   ] scrapers.quotes_scraper – [Quotes] 40 records so far.
+2026-10-07 02:57:32,987 [INFO    ] scrapers.quotes_scraper – [Quotes] Page 5: https://quotes.toscrape.com/page/5/
+2026-10-07 02:57:33,307 [DEBUG   ] urllib3.connectionpool – https://quotes.toscrape.com:443 "GET /page/5/ HTTP/1.1" 200 10012
+2026-10-07 02:57:33,322 [DEBUG   ] scrapers.quotes_scraper – [Quotes] 50 records so far.
+2026-10-07 02:57:34,324 [INFO    ] scrapers.quotes_scraper – [Quotes] Page 6: https://quotes.toscrape.com/page/6/
+2026-10-07 02:57:34,589 [DEBUG   ] urllib3.connectionpool – https://quotes.toscrape.com:443 "GET /page/6/ HTTP/1.1" 200 10416
+2026-10-07 02:57:34,606 [DEBUG   ] scrapers.quotes_scraper – [Quotes] 60 records so far.
+2026-10-07 02:57:35,608 [INFO    ] scrapers.quotes_scraper – [Quotes] Page 7: https://quotes.toscrape.com/page/7/
+2026-10-07 02:57:35,965 [DEBUG   ] urllib3.connectionpool – https://quotes.toscrape.com:443 "GET /page/7/ HTTP/1.1" 200 10722
+2026-10-07 02:57:35,977 [DEBUG   ] scrapers.quotes_scraper – [Quotes] 70 records so far.
+2026-10-07 02:57:36,978 [INFO    ] scrapers.quotes_scraper – [Quotes] Page 8: https://quotes.toscrape.com/page/8/
+2026-10-07 02:57:37,299 [DEBUG   ] urllib3.connectionpool – https://quotes.toscrape.com:443 "GET /page/8/ HTTP/1.1" 200 11393
+2026-10-07 02:57:37,313 [DEBUG   ] scrapers.quotes_scraper – [Quotes] 80 records so far.
+2026-10-07 02:57:38,314 [INFO    ] scrapers.quotes_scraper – [Quotes] Page 9: https://quotes.toscrape.com/page/9/
+2026-10-07 02:57:38,629 [DEBUG   ] urllib3.connectionpool – https://quotes.toscrape.com:443 "GET /page/9/ HTTP/1.1" 200 11022
+2026-10-07 02:57:38,642 [DEBUG   ] scrapers.quotes_scraper – [Quotes] 90 records so far.
+2026-10-07 02:57:39,643 [INFO    ] scrapers.quotes_scraper – [Quotes] Page 10: https://quotes.toscrape.com/page/10/
+2026-10-07 02:57:39,978 [DEBUG   ] urllib3.connectionpool – https://quotes.toscrape.com:443 "GET /page/10/ HTTP/1.1" 200 9943
+2026-10-07 02:57:39,990 [DEBUG   ] scrapers.quotes_scraper – [Quotes] 100 records so far.
+2026-10-07 02:57:39,991 [INFO    ] scrapers.quotes_scraper – [Quotes] Finished. 100 raw records collected.
+2026-10-07 02:57:39,992 [INFO    ] main – Quotes raw records: 100
+2026-10-07 02:57:39,992 [INFO    ] main – Total raw records: 1100
+2026-10-07 02:57:39,993 [INFO    ] main – STEP 2 – Cleaning …
+2026-10-07 02:57:40,029 [INFO    ] main – Records after cleaning: 1100
+2026-10-07 02:57:40,030 [INFO    ] main – STEP 3 – Validating …
+2026-10-07 02:57:40,041 [INFO    ] processing.validation – Validation complete – valid: 1100  rejected: 0
+2026-10-07 02:57:40,041 [INFO    ] main – Valid: 1100  Rejected: 0
+2026-10-07 02:57:40,041 [INFO    ] main – STEP 4 – Deduplicating …
+2026-10-07 02:57:40,050 [DEBUG   ] processing.deduplication – Duplicate detected (key=('books to scrape', 'the star-touched queen')) at record index 707 (first seen at index 700)
+2026-10-07 02:57:40,056 [INFO    ] processing.deduplication – Deduplication complete – unique: 1099  duplicates removed: 1
+2026-10-07 02:57:40,056 [INFO    ] main – Unique: 1099  Duplicates removed: 1
+2026-10-07 02:57:40,056 [INFO    ] main – STEP 5 – Writing outputs …
+2026-10-07 02:57:40,074 [INFO    ] main – CSV written to C:\Users\anamd\Desktop\Web_Scrapping\output\final_dataset.csv (1099 records).
+2026-10-07 02:57:40,077 [INFO    ] main – Summary written to C:\Users\anamd\Desktop\Web_Scrapping\output\summary_report.json.
+2026-10-07 02:57:40,078 [INFO    ] main – ============================================================
+2026-10-07 02:57:40,078 [INFO    ] main – Pipeline complete in 157.20 s.
+2026-10-07 02:57:40,079 [INFO    ] main – Final records:        1099
+2026-10-07 02:57:40,079 [INFO    ] main – Duplicates removed:   1
+2026-10-07 02:57:40,080 [INFO    ] main – Rejected (invalid):   0
+2026-10-07 02:57:40,081 [INFO    ] main – Output CSV:           C:\Users\anamd\Desktop\Web_Scrapping\output\final_dataset.csv
+2026-10-07 02:57:40,081 [INFO    ] main – Summary report:       C:\Users\anamd\Desktop\Web_Scrapping\output\summary_report.json
+2026-10-07 02:57:40,081 [INFO    ] main – Log file:             C:\Users\anamd\Desktop\Web_Scrapping\logs\scrape_20261006_212502.log
+2026-10-07 02:57:40,082 [INFO    ] main – ============================================================
